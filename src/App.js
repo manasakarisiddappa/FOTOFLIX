@@ -33,8 +33,10 @@ function App() {
       const data = await response.json();
       setPhotos((oldPhoto) => {
         if (query && page === 1) {
+          setQuery("");
           return data.results;
         } else if (query) {
+          setQuery("");
           return [...oldPhoto, ...data.results];
         } else {
           return [...oldPhoto, ...data];
@@ -110,7 +112,7 @@ function App() {
             </button>
           </form>
           <div className="navbar__links">
-            <Link to="/favourites">Favourites</Link>
+            <Link to="/favourites">Liked</Link>
           </div>
         </nav>
 

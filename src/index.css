@@ -330,6 +330,52 @@ Stock Photos
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navbar__logo {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-right: 0.5rem;
+  }
+
+  .submit-btn {
+    background-color: #260535;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .navbar__links a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem; /* Increase the font size */
+    font-weight: 600; /* Make it bolder */
+    background-color: #260535;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    letter-spacing: 0.8px;
+    font-size: 0.8rem;
+    background: transparent;
+    color: #260535;
+    border-bottom: 2px solid #180a25;
+  }
+
+  .photos {
+    padding: 1.5rem 0 !important;
+  }
+}
+
 /* Photo container styles */
 
 .photo:hover {

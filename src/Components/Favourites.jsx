@@ -1,5 +1,6 @@
 import React from "react";
 import Photos from "./Photos";
+import { Link } from "react-router-dom";
 
 const Favourite = ({ favoritePhotos, handleRemoveFavorite }) => {
   return (
@@ -8,7 +9,7 @@ const Favourite = ({ favoritePhotos, handleRemoveFavorite }) => {
       <nav className="navbar">
         <div className="navbar__logo">Pixahive</div>
         <div className="navbar__links">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </div>
       </nav>
 
